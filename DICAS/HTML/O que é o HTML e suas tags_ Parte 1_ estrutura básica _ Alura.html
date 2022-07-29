@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<!-- saved from url=(0080)https://www.alura.com.br/artigos/o-que-e-html-suas-tags-parte-1-estrutura-basica -->
+<html lang="pt-BR"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0"><title>O que é o HTML e suas tags? Parte 1: estrutura básica | Alura</title><meta name="description" content="Guia para iniciantes sobre o HTML e suas tags."><link rel="canonical" href="https://www.alura.com.br/artigos/o-que-e-html-suas-tags-parte-1-estrutura-basica"><link rel="icon" href="https://www.alura.com.br/assets/favicon.1647533642.ico"><link href="./O que é o HTML e suas tags_ Parte 1_ estrutura básica _ Alura_files/css" rel="stylesheet" crossorigin=""><link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin=""><link rel="stylesheet" href="./O que é o HTML e suas tags_ Parte 1_ estrutura básica _ Alura_files/titulos.1653434924.css"><link rel="stylesheet" href="./O que é o HTML e suas tags_ Parte 1_ estrutura básica _ Alura_files/index.1657545818.css"><link rel="stylesheet" href="./O que é o HTML e suas tags_ Parte 1_ estrutura básica _ Alura_files/highlight.1654296464.css"><meta property="og:locale" content="pt_BR"><meta property="og:description" content="Guia para iniciantes sobre o HTML e suas tags."><meta property="og:title" content="O que é o HTML e suas tags? Parte 1: estrutura básica | Alura"><meta property="og:site_name" content="Alura"><meta property="og:url" content="https://www.alura.com.br/artigos/o-que-e-html-suas-tags-parte-1-estrutura-basica"><meta property="og:image" content="https://www.alura.com.brbanner.jpg"><meta property="og:image:alt" content="Alura logo"><meta property="fb:app_id" content="140078819399376"><meta property="og:type" content="website"><meta name="twitter:card" content="summary_large_image"><meta name="theme-color" content="#2A7AE4"><meta name="thumbnail" content="https://www.alura.com.brbanner.jpg"> <script type="text/javascript" async="" src="./O que é o HTML e suas tags_ Parte 1_ estrutura básica _ Alura_files/f.txt"></script><script type="text/javascript" async="" src="./O que é o HTML e suas tags_ Parte 1_ estrutura básica _ Alura_files/23465.js"></script><script type="text/javascript" async="" src="./O que é o HTML e suas tags_ Parte 1_ estrutura básica _ Alura_files/f.txt"></script><script type="text/javascript" async="" src="./O que é o HTML e suas tags_ Parte 1_ estrutura básica _ Alura_files/analytics.js"></script><script type="text/javascript" async="" src="./O que é o HTML e suas tags_ Parte 1_ estrutura básica _ Alura_files/insight.min.js"></script><script src="./O que é o HTML e suas tags_ Parte 1_ estrutura básica _ Alura_files/1067810189950610" async=""></script><script async="" src="./O que é o HTML e suas tags_ Parte 1_ estrutura básica _ Alura_files/fbevents.js"></script><script async="" src="./O que é o HTML e suas tags_ Parte 1_ estrutura básica _ Alura_files/gtm.js"></script><script>;(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+                j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+                'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-TN542JN');</script>  <script async="" src="./O que é o HTML e suas tags_ Parte 1_ estrutura básica _ Alura_files/js"></script> <script>window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '980051072');</script> <script async="" src="./O que é o HTML e suas tags_ Parte 1_ estrutura básica _ Alura_files/hotjar-2983364.js"></script><meta http-equiv="origin-trial" content="A9wkrvp9y21k30U9lU7MJMjBj4USjLrGwV+Z8zO3J3ZBH139DOnCv3XLK2Ii40S94HG1SZ/Zeg2GSHOD3wlWngYAAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjYxMjk5MTk5LCJpc1RoaXJkUGFydHkiOnRydWV9"><script src="./O que é o HTML e suas tags_ Parte 1_ estrutura básica _ Alura_files/sha256.min.js"></script><script async="" src="./O que é o HTML e suas tags_ Parte 1_ estrutura básica _ Alura_files/modules.311bafb9406f6ba6bebc.js" charset="utf-8"></script><style type="text/css">iframe#_hjRemoteVarsFrame {display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;}</style><script type="text/javascript" async="" src="./O que é o HTML e suas tags_ Parte 1_ estrutura básica _ Alura_files/f(1).txt"></script><meta http-equiv="origin-trial" content="A9wkrvp9y21k30U9lU7MJMjBj4USjLrGwV+Z8zO3J3ZBH139DOnCv3XLK2Ii40S94HG1SZ/Zeg2GSHOD3wlWngYAAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjYxMjk5MTk5LCJpc1RoaXJkUGFydHkiOnRydWV9"><script type="text/javascript" async="" src="./O que é o HTML e suas tags_ Parte 1_ estrutura básica _ Alura_files/f(2).txt"></script></head><body class=""> <script src="./O que é o HTML e suas tags_ Parte 1_ estrutura básica _ Alura_files/avatarOnError.1647533644.js"></script> <noscript><iframe
+src="https://www.googletagmanager.com/ns.html?id=GTM-TN542JN" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> <script>!function(f,b,e,v,n,t,s) {if(f.fbq)return;n=f.fbq=function(){n.callMethod? n.callMethod.apply(n,arguments):n.queue.push(arguments)}; if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0'; n.queue=[];t=b.createElement(e);t.async=!0; t.src=v;s=b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t,s)}(window, document,'script', 'https://connect.facebook.net/en_US/fbevents.js'); fbq('init', '1067810189950610'); fbq('track', 'PageView');</script> <script src="./O que é o HTML e suas tags_ Parte 1_ estrutura básica _ Alura_files/courseIconFallback.1647533644.js"></script>  <script type="application/ld+json">{
+      "@context": "http://schema.org",
+      "@type": "BreadcrumbList",
+
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@id": "https://www.alura.com.br",
+          "name": "Alura"
+        }
+      }   
+              ,{
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@id": "https://www.alura.com.br/artigos",
+            "name": "Artigos"
+          }
+        }
+              ,{
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@id": "https://www.alura.com.br/artigos/front-end",
+            "name": "Front-end"
+          }
+        }
+              ,{
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@id": "https://www.alura.com.br/artigos/o-que-e-html-suas-tags-parte-1-estrutura-basica",
+            "name": "O que é o HTML e suas tags? Parte 1: estrutura básica"
+          }
+        }
+            ]
+    }</script> <link rel="stylesheet" href="./O que é o HTML e suas tags_ Parte 1_ estrutura básica _ Alura_files/header.1647533642.css"><link rel="stylesheet" href="./O que é o HTML e suas tags_ Parte 1_ estrutura básica _ Alura_files/dia-do-programador.1647533642.css"><link rel="stylesheet" href="./O que é o HTML e suas tags_ Parte 1_ estrutura básica _ Alura_files/countdown.1647533642.css"><link rel="stylesheet" href="./O que é o HTML e suas tags_ Parte 1_ estrutura básica _ Alura_files/header.1647533642.css"><header class="header"><div class="container"><nav class="header__nav">
+<a href="https://www.alura.com.br/" class="header__nav__link header__nav__link--logo">
+<img class="header__nav__link__logo" alt="Alura" src="./O que é o HTML e suas tags_ Parte 1_ estrutura básica _ Alura_files/alura-logo-white.1647533642.svg">
+</a><div class="header__nav__wrapper header__nav__wrapper--ctas"><div class="header-utilitario-busca" aria-label="Busca">
+<svg class="header-utilitario-busca-icone--home" xmlns:xlink="http://www.w3.org/1999/xlink">
+<use xlink:href="/svg,1647533643/header#icon-header-busca-home"></use>
+</svg></div>
+<a href="https://cursos.alura.com.br/loginForm?urlAfterLogin=https://cursos.alura.com.br/dashboard" class="header__nav__link header__nav__link--entrar">Entrar</a>
+<a href="https://www.alura.com.br/planos-cursos-online" class="header__nav__link header__nav__link--cta">Matricule-se</a></div><div class="header-barraBusca__wrapper"><div class="header-barraBusca"><div class="container"><form action="https://www.alura.com.br/busca" class="header-barraBusca-form">
+<label for="header-barraBusca-form-campoBusca">Qual curso procura?</label>
+<input type="search" id="header-barraBusca-form-campoBusca" name="query" class="header-barraBusca-form-serch-input" placeholder="O que você quer aprender?">
+<button class="header-barraBusca-form-submit" type="submit"></button></form></div></div></div><div class="nav__courses__wrapper header__nav__wrapper header__nav__wrapper--menu"><div class="nav__courses__link header-navegacao-cursos">
+<svg class="header-navegacao-cursos-icone" xmlns:xlink="http://www.w3.org/1999/xlink">
+<use xlink:href="/svg,1605191409/header#icon-header-icon-arrow"></use>
+</svg>
+<span>Todos os</span>
+<span>Cursos</span></div>
+<a href="https://www.alura.com.br/formacoes" class="nav__courses__link">
+<span>Nossas</span>
+<span>Formações</span>
+</a>
+<a href="https://www.alura.com.br/empresas" class="nav__courses__link">
+<span>Para</span>
+<span>Empresas</span>
+</a>
+<a href="https://www.alura.com.br/dev-em-t" class="nav__courses__link">
+<span>Dev</span>
+<span>em  &lt;T&gt;</span>
+</a></div></nav></div><div class="--border-header-top"><div class="container"><ul class="header-navegacao-cursos-lista"><li class="header-cursos-lista-categoria ">
+<a href="https://www.alura.com.br/escola-programacao" class="unlinkify"><div class="header-lista-categoria-nome">
+<span>Programação</span></div>
+</a><div class="header-color--link" style="color: #00c86f;"></div></li><li class="header-cursos-lista-categoria ">
+<a href="https://www.alura.com.br/escola-front-end" class="unlinkify"><div class="header-lista-categoria-nome">
+<span>Front-end</span></div>
+</a><div class="header-color--link" style="color: #6bd1ff;"></div></li><li class="header-cursos-lista-categoria ">
+<a href="https://www.alura.com.br/escola-data-science" class="unlinkify"><div class="header-lista-categoria-nome">
+<span>Data Science</span></div>
+</a><div class="header-color--link" style="color: #9cd33b;"></div></li><li class="header-cursos-lista-categoria ">
+<a href="https://www.alura.com.br/escola-devops" class="unlinkify"><div class="header-lista-categoria-nome">
+<span>DevOps</span></div>
+</a><div class="header-color--link" style="color: #f16165;"></div></li><li class="header-cursos-lista-categoria ">
+<a href="https://www.alura.com.br/escola-design-ux" class="unlinkify"><div class="header-lista-categoria-nome">
+<span>UX &amp; Design</span></div>
+</a><div class="header-color--link" style="color: #dc6ebe;"></div></li><li class="header-cursos-lista-categoria ">
+<a href="https://www.alura.com.br/escola-mobile" class="unlinkify"><div class="header-lista-categoria-nome">
+<span>Mobile</span></div>
+</a><div class="header-color--link" style="color: #ffba05;"></div></li><li class="header-cursos-lista-categoria ">
+<a href="https://www.alura.com.br/escola-inovacao-gestao" class="unlinkify"><div class="header-lista-categoria-nome">
+<span>Inovação &amp; Gestão</span></div>
+</a><div class="header-color--link" style="color: #ff8c2a;"></div></li></ul></div></div></header><section class="cosmos-container-color"><div class="cosmos-color"><div class="cosmos artigos-topo"><div class="container">
+<a href="https://www.alura.com.br/artigos" class="artigos-topo__label">
+Artigos
+</a>
+&gt;
+<a class="artigos-topo__label --artigos-strong" href="https://www.alura.com.br/artigos/front-end" style="color:#6bd1ff">Front-end</a></div></div></div>
+ <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.alura.com.br/artigos/o-que-e-html-suas-tags-parte-1-estrutura-basica"
+  },
+  "headline": "O que é o HTML e suas tags? Parte 1: estrutura básica",
+  "description": "Guia para iniciantes sobre o HTML e suas tags.",
+  "image": "banner.jpg",
+  "datePublished": "2021-12-13",
+    "dateModified": "2021-12-14",
+    "author": {
+        "@type": "Organization",
+    "name": "Alura"
+      },
+   "publisher": {
+    "@type": "Organization",
+    "name": "Alura",
+    "url": "https://www.alura.com.br",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.alura.com.br/assets/img/amp/logo-publisher.1647533642.png",
+      "height" : 60, 
+      "width" : 600 
+    }
+  }
+}</script> <section class="cosmos-color"><article class="cosmos"><div class="cosmos-header"><h1>O que é o HTML e suas tags? Parte 1: estrutura básica</h1><div class="cosmos-image__wrapper">
+<img src="./O que é o HTML e suas tags_ Parte 1_ estrutura básica _ Alura_files/o-que-e-html-suas-tags-parte-1-estrutura-basica.jpg" alt="O que é o HTML e suas tags? Parte 1: estrutura básica" class="cosmos-image cosmos-banner-top" style="border: none; padding: 0px; width: 100%; height: 300px; object-fit: cover; max-width: none;"></div><div class="cosmos-header-info"><div class="cosmos-author">
+<img class="cosmos-author-img" src="./O que é o HTML e suas tags_ Parte 1_ estrutura básica _ Alura_files/beatrizmouradev.png" alt="Beatriz Moura" width="50" height="50"><div><div class="cosmos-author-name">Beatriz Moura</div>
+<time class="cosmos-author-date" datetime="2021-12-13 11:42">13/12/2021</time></div></div><div class="cosmos-container-social-media"><p class="cosmos-text-social-media">Compartilhe</p><ul class="cosmos-container-flex-social-media"><li class="--icon-twitter">
+<a href="https://twitter.com/share?url=https://www.alura.com.br/artigos/o-que-e-html-suas-tags-parte-1-estrutura-basica"></a></li><li class="--icon-linkedin">
+<a href="https://linkedin.com/shareArticle?url=https://www.alura.com.br/artigos/o-que-e-html-suas-tags-parte-1-estrutura-basica"></a></li><li class="--icon-facebook">
+<a href="https://facebook.com/share.php?u=https://www.alura.com.br/artigos/o-que-e-html-suas-tags-parte-1-estrutura-basica"></a></li><li class="--icon-whatsapp">
+<a href="https://api.whatsapp.com/send?text=https://www.alura.com.br/artigos/o-que-e-html-suas-tags-parte-1-estrutura-basica"></a></li></ul></div><div class="cosmos-related-gruides"><div class="cosmos-related-item cosmos-related-item__formacao">
+<a class="cosmos-related-link-formacao" href="https://www.alura.com.br/formacao-html-e-css"><div class="cosmos-flex--text">
+<img class="cosmos-related-item-image" src="./O que é o HTML e suas tags_ Parte 1_ estrutura básica _ Alura_files/front-end.svg"><div class="cosmos--margin"><p class="cosmos-text-category">Esse artigo faz parte da</p><p class="cosmos-related-item-title">Formação HTML e CSS</p></div></div>
+</a></div></div></div></div><div class="cosmos-header-line"></div><p>Autores: <a href="https://cursos.alura.com.br/user/beatriz-moura0">Beatriz Moura</a> e <a href="https://cursos.alura.com.br/user/mateus-henrique1">Mateus Henrique</a></p><p>Você já pensou em como uma página web é feita nos detalhes? O primeiro ponto importante para isso, é compreender como funciona a sua <strong>estrutura</strong> e como criar os <strong>elementos</strong> que a compõem.</p><p>Esse artigo compõe uma série de cinco artigos sobre o que é HTML e suas tags:</p><ol><li><a href="https://www.alura.com.br/artigos/o-que-e-html-suas-tags-parte-1-estrutura-basica?utm_source=gnarus&amp;utm_medium=timeline">O que é o HTML e suas tags: estrutura básica</a></li><li><a href="https://www.alura.com.br/artigos/o-que-e-html-suas-tags-parte-2-elementos-inline?utm_source=gnarus&amp;utm_medium=timeline">O que é o HTML e suas tags: elementos inline</a></li><li><a href="https://www.alura.com.br/artigos/html-tags-elementos-block-level?utm_source=gnarus&amp;utm_medium=timeline">O que é o HTML e suas tags: elementos block-level</a></li><li><a href="https://www.alura.com.br/artigos/o-que-e-html-suas-tags-parte-4-elementos-formulario">O que é o HTML e suas tags: elementos de um formulário</a></li><li><a href="https://www.alura.com.br/artigos/o-que-e-html-suas-tags-parte-5-atributos-elementos">O que é o HTML e suas tags: atributos dos elementos</a></li></ol><h3>O que é HTML e suas tags?</h3><p>O HTML existe desde 1991 e atualmente está na versão 5, que veio recheada de recursos e funcionalidades que trazem melhorias para o desenvolvimento web, sua responsabilidade principal é demarcar a <strong>estrutura</strong> de uma página da web. Essa estrutura do HTML é formada por um conjunto de elementos, ou seja, os hipertextos, que se conectam entre si formando a página. Os elementos HTML ou também chamados de tags HTML, são utilizados para informar ao navegador que tipo de estrutura é essa que está sendo construída, podendo ser títulos, parágrafos, imagens, links, entre outros.</p><p>Dessa forma, para que um documento seja interpretado pelo navegador, é necessário que o arquivo tenha a extensão <em>.html</em> e a partir disso, poderá ser exibido por qualquer navegador web.</p><p>As tags são formadas por uma estrutura própria, iniciam com o sinal <em>“menor que”</em>, em seguida vem o nome daquele elemento e por fim, o sinal <em>“maior que”</em>. Podem ser dispostas em tags que precisam de fechamento e tags que fecham sozinhas <em>(self-closing)</em>. O fechamento de uma tag será definido com uma barra <em>(/)</em>, sendo que no caso das tags de auto fechamento, não há necessidade da presença desse caractere.</p><pre><code class="hljs xml"> <span class="hljs-comment"><span class="hljs-comment">&lt;!--Tag que precisa de fechamento--&gt;</span></span>
+    <span class="hljs-tag"><span class="hljs-tag">&lt;</span><span class="hljs-name"><span class="hljs-tag"><span class="hljs-name">h1</span></span></span><span class="hljs-tag">&gt;</span></span>Olá Mundo!<span class="hljs-tag"><span class="hljs-tag">&lt;/</span><span class="hljs-name"><span class="hljs-tag"><span class="hljs-name">h1</span></span></span><span class="hljs-tag">&gt;</span></span>
+    <span class="hljs-comment"><span class="hljs-comment">&lt;!--Tag de auto fechamento--&gt;</span></span>
+    <span class="hljs-tag"><span class="hljs-tag">&lt;</span><span class="hljs-name"><span class="hljs-tag"><span class="hljs-name">img</span></span></span><span class="hljs-tag"> </span><span class="hljs-attr"><span class="hljs-tag"><span class="hljs-attr">src</span></span></span><span class="hljs-tag">=</span><span class="hljs-string"><span class="hljs-tag"><span class="hljs-string">"banner.jpg"</span></span></span><span class="hljs-tag">&gt;</span></span></code></pre><h4>Tipos de tag</h4><p>As tags podem ser categorizadas inicialmente em dois tipos, em “nível de bloco” (block-level) e “em linha” (inline). Um elemento em nível de bloco ocupa toda a largura de seu elemento pai, que também chamamos de elemento container, criando assim um “bloco”. Já os elementos inline, geralmente usamos para demarcação de conteúdos de texto.</p><p><img src="./O que é o HTML e suas tags_ Parte 1_ estrutura básica _ Alura_files/imagem1.png" alt="De um lado há duas frases, uma abaixo da outra, ambas escritas “Olá Mundo!”, a frase da primeira linha ocupa 100% da largura disponível e a segunda linha ocupa a largura apenas do seu conteúdo de texto. Do outro lado, há linhas de código html, a tag p encapsulando o primeiro olá mundo, representando o elemento de nível de bloco e em seguida a tag a encapsulando o segundo olá mundo representado o elemento inline." class="cosmos-image"></p><h4>Estrutura básica</h4><p>O VS Code utiliza por padrão o <a href="https://docs.emmet.io/abbreviations/" target="_blank" rel="noopener">Emmet Abbreviations</a>, que traz  o aparecimento automático de linhas de código que fazem parte da estrutura básica do HTML ao digitar o ponto de exclamação. Dessa forma:</p><pre><code class="hljs diff"><span class="hljs-addition">!</span></code></pre><p>Resultado:</p><pre><code class="hljs xml"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-meta-keyword">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"en"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"UTF-8"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">"X-UA-Compatible"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"IE=edge"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"viewport"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"width=device-width, initial-scale=1.0"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Document<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></code></pre><h3><code>&lt;!DOCTYPE html&gt;</code></h3><p>Informa ao navegador que esse documento é do tipo HTML e sua versão. Quando está escrito apenas html, indica que é a mais recente...</p><h3><code>&lt;html&gt;</code></h3><p>Representa a raiz do documento, serve com um container que engloba todos os outros elementos HTML.</p><h3><code>&lt;body&gt;</code></h3><p>É onde fica todo o conteúdo de texto, imagem e vídeos, em que o usuário vê e interage, nele os conteúdos são estruturados pelas demais tags do HTML.</p><h3><code>&lt;script&gt;</code></h3><p>Esse elemento contém instruções de script ou aponta para um arquivo de script externo por meio do atributo src.</p><h3><code>&lt;head&gt;</code></h3><p>Compreende as informações do documento que serão interpretadas pelo navegador (metadados). Como por exemplo, título do documento, links para folhas de estilo etc.</p><h3><code>&lt;meta&gt;</code></h3><p>Define metadados, ou seja, informações sobre dados de um documento HTML. As <code>&lt;meta&gt;</code>  tags vão dentro do elemento <code>&lt;head&gt;</code> e são usadas para especificar o conjunto de caracteres, o autor do documento, as configurações da janela de visualização etc.</p><h3><code>&lt;link&gt;</code></h3><p>É uma tag vazia, que contém apenas atributos e faz a relação do documento HTML com recursos externos, é comumente usado para vincular uma folha de estilo externa, também é usada para definir o favicon da página (ícone da aba do navegador), como outros recursos.</p><h3><code>&lt;style&gt;</code></h3><p>Essa tag é usada para declarar estilos (CSS) para um documento.</p><h4>Tags semânticas</h4><p>Tags semânticas são tags que possuem um significado, que dão sentido a informação de texto ao navegador e buscadores, como por exemplo, utilizar a tag <code>&lt;header&gt;</code> para cabeçalhos ou <code>&lt;article&gt;</code> para dar um significado de artigo para aquele bloco de texto, até mesmo <code>&lt;p&gt;</code> para indicar que aquele texto é um parágrafo, é uma boa prática tentar sempre utilizar essas tags semânticas para ajudar no entendimento do código, além de ajudar muito no <a href="https://www.alura.com.br/artigos/seo-o-que-e-boas-praticas-ferramentas-estrategia">SEO</a> do site (Otimização para motores de busca, é o que ajuda o seu site a se rankear melhor nos motores de buscas como o Google). Segue abaixo a lista de tags semânticas citadas durante o artigo:</p><ul><li><code>&lt;header&gt;</code></li><li><code>&lt;main&gt;</code></li><li><code>&lt;footer&gt;</code></li><li><code>&lt;section&gt;</code></li><li><code>&lt;article&gt;</code></li><li><code>&lt;aside&gt;</code></li><li><code>&lt;nav&gt;</code></li><li><code>&lt;ol&gt;</code></li><li><code>&lt;ul&gt;</code></li><li><code>&lt;li&gt;</code></li></ul><p>Exemplo de estruturação com tags semânticas:</p><p><img src="./O que é o HTML e suas tags_ Parte 1_ estrutura básica _ Alura_files/imagem2.jpg" alt="A imagem mostra os principais elementos container semânticos presentes dentro de uma página web. Elemento nav está no topo da página ocupando a largura de 100% da página. Abaixo do nav e à esquerda, há o elemento header e abaixo dele, há dois elemento sections que juntos ocupam toda a largura do header. Abaixo do nav e à direita, há o elemento aside, mais estreito e com uma extensão de altura que vai do início do header até o final dos sections. Após todos esses elementos, encontra-se o footer, que assim como o nav, ocupa 100% da largura da página." class="cosmos-image"></p><h4>Tags sem semântica</h4><p>As tags que não possuem semântica não definem um significado para aquele texto, normalmente são utilizadas apenas para fins de separação e estilização. Veja logo abaixo a lista de algumas tags sem semântica:</p><ul><li><code>&lt;div&gt;</code></li><li><code>&lt;span&gt;</code></li><li><code>&lt;b&gt;</code></li><li><code>&lt;i&gt;</code></li></ul><h4>Comentários</h4><p>Comentários no HTML ou em qualquer outra linguagem são notas que podem ser incluídas no código fonte para descrever o que se quiser. Assim, não modificam o programa executado e servem somente para ajudar a pessoa que está desenvolvendo a melhor organizar os seus códigos. Para comentar algum código no HTML você deve envolvê-lo entre <strong>&lt;!-- Seu código aqui –&gt;</strong>. Por exemplo:</p><pre><code class="hljs javascript">&lt;!-- 
+
+<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Esse código será ignorado pelo navegador<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+
+–&gt;</code></pre><h3>Continua…</h3><p>Nesse artigo vimos que o HTML é a principal linguagem de marcação da Web e também a tecnologia mais básica do desenvolvimento front-end, ou seja, o pontapé inicial para criação de estruturas de sites e aplicações web.</p><p>E agora que conhecemos um pouco mais sobre a estrutura básica, vamos juntos aprofundar cada vez mais!  Abaixo, clique para acessar a continuação da série sobre o HTML e suas tags.</p><ul><li><a href="https://www.alura.com.br/artigos/o-que-e-html-suas-tags-parte-2-elementos-inline?utm_source=gnarus&amp;utm_medium=timeline">O que é o HTML e suas tags: elementos inline</a></li></ul><div class="cosmos-author-sobre">
+<img class="cosmos-author-img" src="./O que é o HTML e suas tags_ Parte 1_ estrutura básica _ Alura_files/beatrizmouradev.png" alt="Beatriz Moura" width="150" height="150"><div class="cosmos-author-txt"><div class="cosmos-author-name">Beatriz Moura</div><p>Estudante de Analise e Desenvolvimento de Sistemas, troquei a área da saúde e mergulhei em programação!Apaixonada por desenvolvimento Front-end e entusiasta de UX/UI Design.Descobri a paixão por ensinar sendo monitora durante uma outra graduação de ensino, onde também era presidente de Liga Acadêmica e Diretora de Mídia no Diretório Acadêmico.Atualmente sou Instrutora e Desenvolvedora de Software na Alura e já fiz parte do Scuba Team de Front-end.</p></div></div><nav class="cosmos__navigation">
+<a href="https://www.alura.com.br/artigos/o-que-e-html-suas-tags-parte-4-elementos-formulario" class="cosmos__navigation-link --previous"><div class="cosmos__navigation-item"><div class="cosmos__navigation-label">
+<span class="cosmos__navigation-decoration"></span>
+<span class="cosmos__navigation-description">Artigo Anterior</span></div>
+<strong> O que é o HTML e suas tags? Parte 4: elementos de um formulário </strong></div>
+</a>
+<a href="https://www.alura.com.br/artigos/o-que-e-html-suas-tags-parte-2-elementos-inline" class="cosmos__navigation-link --next"><div class="cosmos__navigation-item"><div class="cosmos__navigation-label">
+<span class="cosmos__navigation-decoration"></span>
+<span class="cosmos__navigation-description">Próximo Artigo</span></div>
+<strong class="cosmos__navigation-item-title"> O que é o HTML e suas tags? Parte 2: elementos inline </strong></div>
+</a></nav></article></section><div class="cosmos-other-files"><div class="container --container-banner-flex"><div class="categories-artigos" style="background:#6bd1ff;">
+<svg class="categories-artigos-icon" style="fill:#ffffff" xmlns:xlink="http://www.w3.org/1999/xlink">
+<use xlink:href="/svg,1647533643/categorias#icon-categorias-front-end"></use>
+</svg></div><p class="cosmos-other-files-text">Veja outros artigos sobre <a href="https://www.alura.com.br/artigos/front-end" style="color:#6bd1ff">Front-end</a></p></div></div><div class="cosmos-color"><div class="cosmos --newsletter-spacing"><link rel="stylesheet" href="./O que é o HTML e suas tags_ Parte 1_ estrutura básica _ Alura_files/subscribeNewsletterCard.1647533642.css"><div class="subscribeNewsletterCard-container"><section class="subscribeNewsletterCard-wrapper"><div class="subscribeNewsletterCard-decoration"></div><div class="subscribeNewsletterCard-busca-box container"><div class="subscribeNewsletterCard-box-texto"><p class="subscribeNewsletterCard-texto-bold">Quer mergulhar em tecnologia e aprendizagem?</p><p class="subscribeNewsletterCard-texto-normal">Receba a newsletter que o nosso CEO escreve pessoalmente,
+com insights do mercado de trabalho, ciência e desenvolvimento de software</p></div><form id="subscribeNewsletterCard__activecampaign" class="subscribeNewsletterCard-form" action="https://www.alura.com.br/api/activecampaign" method="POST">
+<input type="hidden" name="list" value="14">
+<input type="hidden" name="retorno" value="/newsletter-cadastrado">
+<input class="activecampaign-input subscribeNewsletterCard-input" id="activecampaing-email" type="email" placeholder="Escreva seu email" name="email" required="">
+<button class="activecampaign-button subscribeNewsletterCard-button" type="submit">Me inscreva</button><input type="hidden" name="full_url" value="https://www.alura.com.br/artigos/o-que-e-html-suas-tags-parte-1-estrutura-basica"><input type="hidden" name="user_agent" value="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"><input type="hidden" name="referral" value="https://cursos.alura.com.br/"></form></div></section></div> <script>(function() {
+            function criaCampo(nome, valor, form) {
+                if (valor === null) return;
+
+                var input = document.createElement('input');
+                input.type = 'hidden';
+                input.name = nome;
+                input.value = valor;
+
+                form.appendChild(input);
+            }
+
+            function param(name) {
+                var url = location.href;
+                name = name.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");
+                var regexS = "[\\?&]"+name+"=([^&#]*)";
+                var regex = new RegExp( regexS );
+                var results = regex.exec( url );
+                return results == null ? null : results[1];
+            }
+
+            function showNewsletterError() {
+                document.querySelector('.newsletter-message-error').classList.remove('newsletter-message-error--disabled');
+            }
+
+            function valida() {
+                var isValid = true;
+                var inputList = document.querySelector('#subscribeNewsletterCard__activecampaign')['list'];
+                var inputEmail = document.querySelector('#subscribeNewsletterCard__activecampaign')['email'];
+
+                isValid = validaEmail(inputEmail.value) && validaList(inputList.value);
+
+                if(!isValid) {
+                    showNewsletterError();
+                }
+
+                return isValid;
+            }
+
+            function validaList(list) {
+                return list != '-1';
+            }
+
+            function validaEmail(email) {
+                var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+                return re.test(email);
+            }
+
+            var form = document.querySelector('#subscribeNewsletterCard__activecampaign');
+            if(!form) return;
+
+            criaCampo('utm_source', param('utm_source'), form);
+            criaCampo('utm_campaign', param('utm_campaign'), form);
+            criaCampo('utm_medium', param('utm_medium'), form);
+            criaCampo('utm_term', param('utm_term'), form);
+            criaCampo('utm_content', param('utm_content'), form);
+            criaCampo('full_url', location.href, form);
+            criaCampo('user_agent', navigator.userAgent, form);
+            criaCampo('referral', document.referrer, form);
+
+            form.onsubmit = valida;
+
+        })();</script> </div></div></section> <script async="" src="./O que é o HTML e suas tags_ Parte 1_ estrutura básica _ Alura_files/ei.js"></script> <link rel="stylesheet" href="./O que é o HTML e suas tags_ Parte 1_ estrutura básica _ Alura_files/footer.1655746009.css"><footer class="footer"><div class="container"><div class="footer-info flex-row"><div class="footer-logos">
+<a class="footer-logos-home" gtm-data="footer_primeira_secao_050" href="https://www.alura.com.br/">
+<img src="./O que é o HTML e suas tags_ Parte 1_ estrutura básica _ Alura_files/alura-logo.1647533643.svg" alt="Alura" class="footer-logo" loading="lazy">
+</a><p class="footer-navegue-lista-link --description">
+<span class="footer-empresa-item">AOVS Sistemas de Informática S.A</span>
+<span class="footer-empresa-item">CNPJ 05.555.382/0001-33</span></p></div><div class="footer-card-hotLinks social-desktop"><h2 class="footer-card-hotLinks-titulo">Nossas redes e apps</h2><div class="footer-card-hotLinks-info footer-card-redes">
+<a href="https://www.youtube.com/alura" gtm-data="footer_primeira_secao_065" class="footer-card-hotLinks-link" target="_blank" rel="noopener" title="YouTube da Alura">
+<svg class="footer-card-hotLinks-icon footer-card-hotLinks-youtube">
+<use xlink:href="/svg,1647533643/footer#icon-footer-youtube"></use>
+</svg>
+<span>YouTube</span>
+</a>
+<a href="https://www.facebook.com/AluraCursosOnline/" gtm-data="footer_primeira_secao_066" class="footer-card-hotLinks-link" target="_blank" rel="noopener" title="Facebook da Alura">
+<svg class="footer-card-hotLinks-icon footer-card-hotLinks-facebook">
+<use xlink:href="/svg,1647533643/footer#icon-footer-facebook"></use>
+</svg>
+<span>Facebook</span>
+</a>
+<a href="https://twitter.com/aluraonline" gtm-data="footer_primeira_secao_067" class="footer-card-hotLinks-link" target="_blank" rel="noopener" title="Twitter da Alura">
+<svg class="footer-card-hotLinks-icon footer-card-hotLinks-twitter">
+<use xlink:href="/svg,1647533643/footer#icon-footer-twitter"></use>
+</svg>
+<span>Twitter</span>
+</a>
+<a href="https://instagram.com/aluraonline" class="footer-card-hotLinks-link" gtm-data="footer_primeira_secao_073" target="_blank" rel="noopener" title="Instagram da Alura">
+<svg class="footer-card-hotLinks-icon footer-card-hotLinks-instagram">
+<use xlink:href="/svg,1647533643/footer#icon-footer-instagram"></use>
+</svg>
+<span>Instagram</span>
+</a>
+<a href="https://play.google.com/store/apps/details?id=br.com.alura.mobi&amp;hl=pt_BR" gtm-data="footer_primeira_secao_069" class="footer-card-hotLinks-link" target="_blank" rel="noopener" title="Baixar na Google Play Store">
+<svg class="footer-card-hotLinks-icon footer-card-hotLinks-mobile">
+<use xlink:href="/svg,1647533643/footer#icon-footer-googleplay"></use>
+</svg>
+<span>Google Play Store</span>
+</a>
+<a href="https://itunes.apple.com/br/app/alura-cursos-online/id1225776635" gtm-data="footer_primeira_secao_070" class="footer-card-hotLinks-link" target="_blank" rel="noopener" title="Baixar na AppStore">
+<svg class="footer-card-hotLinks-icon footer-card-hotLinks-mobile">
+<use xlink:href="/svg,1647533643/footer#icon-footer-appstore"></use>
+</svg>
+<span>AppStore</span>
+</a></div></div><div class="footer-card-hotLinks social-mobile"><h2 class="footer-card-hotLinks-titulo">Nossas redes e apps</h2><div class="footer-card-hotLinks-info footer-card-redes">
+<a href="https://www.youtube.com/alura" gtm-data="footer_primeira_secao_065" class="footer-card-hotLinks-link" target="_blank" rel="noopener" title="YouTube da Alura">
+<svg class="footer-card-hotLinks-icon footer-card-hotLinks-youtube">
+<use xlink:href="/svg,1647533643/footer#icon-footer-youtube"></use>
+</svg>
+<span>YouTube</span>
+</a>
+<a href="https://www.facebook.com/AluraCursosOnline/" gtm-data="footer_primeira_secao_066" class="footer-card-hotLinks-link" target="_blank" rel="noopener" title="Facebook da Alura">
+<svg class="footer-card-hotLinks-icon footer-card-hotLinks-facebook">
+<use xlink:href="/svg,1647533643/footer#icon-footer-facebook"></use>
+</svg>
+<span>Facebook</span>
+</a>
+<a href="https://twitter.com/aluraonline" gtm-data="footer_primeira_secao_067" class="footer-card-hotLinks-link" target="_blank" rel="noopener" title="Twitter da Alura">
+<svg class="footer-card-hotLinks-icon footer-card-hotLinks-twitter">
+<use xlink:href="/svg,1647533643/footer#icon-footer-twitter"></use>
+</svg>
+<span>Twitter</span>
+</a>
+<a href="https://instagram.com/aluraonline" class="footer-card-hotLinks-link" gtm-data="footer_primeira_secao_073" target="_blank" rel="noopener" title="Instagram da Alura">
+<svg class="footer-card-hotLinks-icon footer-card-hotLinks-instagram">
+<use xlink:href="/svg,1647533643/footer#icon-footer-instagram"></use>
+</svg>
+<span>Instagram</span>
+</a>
+<a href="https://play.google.com/store/apps/details?id=br.com.alura.mobi&amp;hl=pt_BR" gtm-data="footer_primeira_secao_069" class="footer-card-hotLinks-link" target="_blank" rel="noopener" title="Baixar na Google Play Store">
+<svg class="footer-card-hotLinks-icon footer-card-hotLinks-mobile">
+<use xlink:href="/svg,1647533643/footer#icon-footer-googleplay"></use>
+</svg>
+<span>Google Play Store</span>
+</a>
+<a href="https://itunes.apple.com/br/app/alura-cursos-online/id1225776635" gtm-data="footer_primeira_secao_070" class="footer-card-hotLinks-link" target="_blank" rel="noopener" title="Baixar na AppStore">
+<svg class="footer-card-hotLinks-icon footer-card-hotLinks-mobile">
+<use xlink:href="/svg,1647533643/footer#icon-footer-appstore"></use>
+</svg>
+<span>AppStore</span>
+</a></div></div></div><div class="footer-navegue"><div class="navegue-column"><h2 class="footer-navegacao-titulo">Institucional</h2><ul class="footer-navegue-lista"><li class="footer-navegue-lista-link"><a href="https://www.alura.com.br/sobre" gtm-data="footer_primeira_secao_063">Sobre nós</a></li><li class="footer-navegue-lista-link"><a href="https://grupoalura.gupy.io/">Trabalhe conosco</a></li><li class="footer-navegue-lista-link"><a href="https://www.alura.com.br/empresas">Para
+Empresas</a></li><li class="footer-navegue-lista-link"><a href="https://www.alura.com.br/escolas">Para Escolas</a></li><li class="footer-navegue-lista-link"><a href="https://www.alura.com.br/politica-de-privacidade" gtm-data="footer_primeira_secao_061">Política de Privacidade</a></li><li class="footer-navegue-lista-link"><a href="https://www.alura.com.br/politica-de-integridade">Política de Integridade</a></li><li class="footer-navegue-lista-link"><a href="https://www.alura.com.br/termos-de-uso" gtm-data="footer_primeira_secao_062">Termos
+de
+Uso</a></li><li class="footer-navegue-lista-link"><a href="https://status.alura.com.br/">Status</a></li></ul></div><div class="navegue-column"><h2 class="footer-navegacao-titulo">A Alura</h2><ul class="footer-navegue-lista"><li class="footer-navegue-lista-link"><a href="https://www.alura.com.br/como-funciona" gtm-data="footer_primeira_secao_064">Como
+Funciona</a></li><li class="footer-navegue-lista-link"><a href="https://www.alura.com.br/cursos-online-tecnologia" gtm-data="footer_primeira_secao_054">Todos os cursos</a></li><li class="footer-navegue-lista-link"><a href="https://www.alura.com.br/depoimentos" gtm-data="footer_primeira_secao_069">Depoimentos</a></li><li class="footer-navegue-lista-link"><a href="https://www.alura.com.br/instrutores" gtm-data="footer_primeira_secao_061">Instrutores(as)</a></li><li class="footer-navegue-lista-link"><a href="https://www.alura.com.br/dev-em-t" gtm-data="footer_primeira_secao_065">Dev em
+&lt;T&gt;</a></li></ul></div><div class="navegue-column"><h2 class="footer-navegacao-titulo">Conteúdos</h2><ul class="footer-navegue-lista"><li class="footer-navegue-lista-link"><a href="https://www.alura.com.br/cases">Alura Cases</a></li><li class="footer-navegue-lista-link"><a href="https://www.alura.com.br/imersao" gtm-data="footer_primeira_secao_068">Imersões</a></li><li class="footer-navegue-lista-link"><a href="https://www.alura.com.br/artigos" gtm-data="footer_primeira_secao_058">Artigos</a></li><li class="footer-navegue-lista-link"><a href="https://www.alura.com.br/podcasts">Podcasts</a></li></ul></div><div class="navegue-column"><h2 class="footer-navegacao-titulo">Fale Conosco</h2><ul class="footer-navegue-lista"><li class="footer-navegue-lista-link"><a href="https://www.alura.com.br/contato">Email e telefone</a></li><li class="footer-navegue-lista-link"><a href="https://suporte.alura.com.br/" gtm-data="footer_primeira_secao_066">Perguntas frequentes</a></li><li class="footer-navegue-lista-link whatsapp-icon"><a href="https://api.whatsapp.com/send?phone=5511984510286">Falar pelo WhatsApp</a></li></ul></div><div class="footer-column footer-column-cards"><link rel="stylesheet" href="./O que é o HTML e suas tags_ Parte 1_ estrutura básica _ Alura_files/activeCampaignNewsletterForm.1647533642.css"><div class="newsletter"><h2 class="newsletter-titulo">Novidades e Lançamentos</h2><form id="newsletter-form__activecampaign" class="newsletter-form" action="https://www.alura.com.br/api/activecampaign" method="POST"><input type="hidden" name="list" value="14">
+<input type="hidden" name="ac_tag" value="">
+<input type="hidden" name="ac_tag_id" value="">
+<input type="hidden" name="retorno" value="/newsletter-cadastrado"><label for="email-newsletter">Email</label>
+<input type="email" name="email" class="newsletter-input" placeholder="Seu e-mail" id="email-newsletter"><button type="submit" class="newsletter-button buttonForm">Receber</button>
+<span class="newsletter-message-error newsletter-message-error--disabled">Não foi possível assinar a newsletter</span><input type="hidden" name="full_url" value="https://www.alura.com.br/artigos/o-que-e-html-suas-tags-parte-1-estrutura-basica"><input type="hidden" name="user_agent" value="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"><input type="hidden" name="referral" value="https://cursos.alura.com.br/"></form></div> <script>(function() {
+            function criaCampo(nome, valor, form) {
+                if (valor === null) return;
+
+                var input = document.createElement('input');
+                input.type = 'hidden';
+                input.name = nome;
+                input.value = valor;
+
+                form.appendChild(input);
+            }
+
+            function param(name) {
+                var url = location.href;
+                name = name.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");
+                var regexS = "[\\?&]"+name+"=([^&#]*)";
+                var regex = new RegExp( regexS );
+                var results = regex.exec( url );
+                return results == null ? null : results[1];
+            }
+
+            function showNewsletterError() {
+                document.querySelector('.newsletter-message-error').classList.remove('newsletter-message-error--disabled');
+            }
+
+            function valida() {
+                var isValid = true;
+                var inputList = document.querySelector('#newsletter-form__activecampaign')['list'];
+                var inputEmail = document.querySelector('#newsletter-form__activecampaign')['email'];
+
+                isValid = validaEmail(inputEmail.value) && validaList(inputList.value);
+
+                if(!isValid) {
+                    showNewsletterError();
+                }
+
+                return isValid;
+            }
+
+            function validaList(list) {
+                return list != '-1';
+            }
+
+            function validaEmail(email) {
+                var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+                return re.test(email);
+            }
+
+            var form = document.querySelector('#newsletter-form__activecampaign');
+            if(!form) return;
+
+            criaCampo('utm_source', param('utm_source'), form);
+            criaCampo('utm_campaign', param('utm_campaign'), form);
+            criaCampo('utm_medium', param('utm_medium'), form);
+            criaCampo('utm_term', param('utm_term'), form);
+            criaCampo('utm_content', param('utm_content'), form);
+            criaCampo('full_url', location.href, form);
+            criaCampo('user_agent', navigator.userAgent, form);
+            criaCampo('referral', document.referrer, form);
+
+            form.onsubmit = valida;
+
+        })();</script> </div></div><div class="parceiros flex-column"><h2 class="footer-navegacao-titulo">Parceiros</h2><ul class="footer-navegue-lista flex-row"><li class="footer-navegue-lista-link --description footer-column-cards">
+<img src="./O que é o HTML e suas tags_ Parte 1_ estrutura básica _ Alura_files/scale-up-endeavor.1647533643.png" alt="Programa de aceleração Scale-Up Endeavor" class="footer-navegue-lista__image" loading="lazy">
+<span class="footer-navegue-lista-link --description --partners">Nós, da Alura, somos uma das Scale-Ups
+selecionadas pela Endeavor, programa de aceleração das empresas que
+mais crescem no país.</span></li><li class="footer-navegue-lista-link --description footer-column-cards">
+<img src="./O que é o HTML e suas tags_ Parte 1_ estrutura básica _ Alura_files/google-alumni-2021.1647533643.png" alt="Growth Academy 2021 do Google For Startups" class="footer-navegue-lista__image" loading="lazy">
+<span class="footer-navegue-lista-link --description --partners">Fomos uma das 7 startups selecionadas pelo
+Google For Startups a participar do programa Growth Academy em
+2021.</span></li></ul></div></div></footer><section class="footer_categorias-formacoes"><div class="container"><div class="footer_categorias_wrapper"><h2 class="footer_categorias_title">Cursos</h2><div class="footer_categorias_categorias footer-navegue-lista-link"><div class="footer_categorias_categoria">
+<a href="https://www.alura.com.br/cursos-online-programacao">Cursos de Programação</a><div class="footer_categorias_subcategorias">
+<a href="https://www.alura.com.br/cursos-online-programacao/logica">
+Lógica            </a>
+|                        <a href="https://www.alura.com.br/cursos-online-programacao/python">
+Python            </a>
+|                        <a href="https://www.alura.com.br/cursos-online-programacao/php">
+PHP            </a>
+|                        <a href="https://www.alura.com.br/cursos-online-programacao/java">
+Java            </a>
+|                        <a href="https://www.alura.com.br/cursos-online-programacao/dotnet">
+.NET            </a>
+|                        <a href="https://www.alura.com.br/cursos-online-programacao/node-js">
+Node JS            </a>
+|                        <a href="https://www.alura.com.br/cursos-online-programacao/linguagem-c">
+C            </a>
+|                        <a href="https://www.alura.com.br/cursos-online-programacao/computacao">
+Computação            </a>
+|                        <a href="https://www.alura.com.br/cursos-online-programacao/jogos">
+Jogos            </a>
+|                        <a href="https://www.alura.com.br/cursos-online-programacao/internet-das-coisas">
+IoT            </a></div></div><div class="footer_categorias_categoria">
+<a href="https://www.alura.com.br/cursos-online-front-end">Cursos de Front-end</a><div class="footer_categorias_subcategorias">
+<a href="https://www.alura.com.br/cursos-online-front-end/front-end">
+HTML, CSS            </a>
+|                        <a href="https://www.alura.com.br/cursos-online-front-end/reactjs">
+React            </a>
+|                        <a href="https://www.alura.com.br/cursos-online-front-end/angular">
+Angular            </a>
+|                        <a href="https://www.alura.com.br/cursos-online-front-end/javascript">
+JavaScript            </a>
+|                        <a href="https://www.alura.com.br/cursos-online-front-end/jquery">
+jQuery            </a></div></div><div class="footer_categorias_categoria">
+<a href="https://www.alura.com.br/cursos-online-data-science">Cursos de Data Science</a><div class="footer_categorias_subcategorias">
+<a href="https://www.alura.com.br/cursos-online-data-science/data-science">
+Ciência de dados            </a>
+|                        <a href="https://www.alura.com.br/cursos-online-data-science/business-intelligence">
+BI            </a>
+|                        <a href="https://www.alura.com.br/cursos-online-data-science/sql">
+SQL e Banco de Dados            </a>
+|                        <a href="https://www.alura.com.br/cursos-online-data-science/excel">
+Excel            </a>
+|                        <a href="https://www.alura.com.br/cursos-online-data-science/machine-learning">
+Machine Learning            </a>
+|                        <a href="https://www.alura.com.br/cursos-online-data-science/nosql">
+NoSQL            </a>
+|                        <a href="https://www.alura.com.br/cursos-online-data-science/estatistica">
+Estatística            </a></div></div><div class="footer_categorias_categoria">
+<a href="https://www.alura.com.br/cursos-online-devops">Cursos de DevOps</a><div class="footer_categorias_subcategorias">
+<a href="https://www.alura.com.br/cursos-online-devops/aws">
+AWS            </a>
+|                        <a href="https://www.alura.com.br/cursos-online-devops/azure">
+Azure            </a>
+|                        <a href="https://www.alura.com.br/cursos-online-devops/containers">
+Docker            </a>
+|                        <a href="https://www.alura.com.br/cursos-online-devops/seguranca">
+Segurança            </a>
+|                        <a href="https://www.alura.com.br/cursos-online-devops/infraestrutura-como-codigo">
+IaC            </a>
+|                        <a href="https://www.alura.com.br/cursos-online-devops/linux-comandos-e-processos">
+Linux            </a></div></div><div class="footer_categorias_categoria">
+<a href="https://www.alura.com.br/cursos-online-design-ux">Cursos de UX &amp; Design</a><div class="footer_categorias_subcategorias">
+<a href="https://www.alura.com.br/cursos-online-design-ux/wwww">
+Photoshop e Illustrator            </a>
+|                        <a href="https://www.alura.com.br/cursos-online-design-ux/ux">
+Usabilidade e UX            </a>
+|                        <a href="https://www.alura.com.br/cursos-online-design-ux/video">
+Vídeo e Motion            </a>
+|                        <a href="https://www.alura.com.br/cursos-online-design-ux/3d">
+3D            </a></div></div><div class="footer_categorias_categoria">
+<a href="https://www.alura.com.br/cursos-online-mobile">Cursos de Mobile</a><div class="footer_categorias_subcategorias">
+<a href="https://www.alura.com.br/cursos-online-mobile/react-native">
+React Native            </a>
+|                        <a href="https://www.alura.com.br/cursos-online-mobile/flutter">
+Flutter            </a>
+|                        <a href="https://www.alura.com.br/cursos-online-mobile/ios">
+iOS e Swift            </a>
+|                        <a href="https://www.alura.com.br/cursos-online-mobile/android">
+Android, Kotlin            </a>
+|                        <a href="https://www.alura.com.br/cursos-online-mobile/jogos">
+Jogos            </a></div></div><div class="footer_categorias_categoria">
+<a href="https://www.alura.com.br/cursos-online-inovacao-gestao">Cursos de Inovação &amp; Gestão</a><div class="footer_categorias_subcategorias">
+<a href="https://www.alura.com.br/cursos-online-inovacao-gestao/agilidade">
+Métodos Ágeis            </a>
+|                        <a href="https://www.alura.com.br/cursos-online-inovacao-gestao/softskills-carreira">
+Softskills            </a>
+|                        <a href="https://www.alura.com.br/cursos-online-inovacao-gestao/gestao-corporativa">
+Liderança e Gestão            </a>
+|                        <a href="https://www.alura.com.br/cursos-online-inovacao-gestao/startup-empreendedorismo">
+Startups            </a>
+|                        <a href="https://www.alura.com.br/cursos-online-inovacao-gestao/vendas">
+Vendas            </a></div></div></div></div></div></section><style>@media not all and (min-width: 1000px){
+		.grupoCaelum{
+			display: none;
+		}
+	}
+
+	.grupoCaelum{
+		background: #fff;
+		height: 400px;
+		border-top: 1px solid #EBEBEE;
+	}
+
+	.grupoCaelum .container{
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		padding-top: 0;
+		padding-bottom: 0;
+		height: 100%;
+	}
+
+		.grupoCaelum-list{
+			display: flex;
+			list-style: none;
+			width: 60%;
+			justify-content: space-between;
+			align-items: flex-start;
+			margin-top: 20px;
+		}
+
+		.grupoCaelum-title{
+			width: 20%;
+		}
+
+		.grupoCaelum-column {
+			display: inline-block;
+			padding-left: 19px;
+			width: 240px;
+			height: 350px;
+			min-width: 160px;
+		}
+			.grupoCaelum-column-title {
+				font-size: 10px;
+				color: #d7e0e5;
+				text-transform: uppercase;
+				font-weight: 600;
+				margin-bottom: 19px;
+			}
+
+			.grupoCaelum-column-list {
+				list-style: none;
+			}
+
+			.column-item-title {
+				font-size: 11px;
+				text-align: center;
+				vertical-align: middle;
+				display: inline-block;
+				margin-left: 6.5px;
+			}
+
+		.grupoCaelum-column:not(:first-child) {
+			border-left: solid 1px #e3e9ed;
+		}
+
+		.grupoCaelum-title {
+			display: inline-block;
+			text-decoration: none;
+			color: #657176;
+			letter-spacing: normal;
+			font-size: 18px;
+			margin-top: 54px;
+		}
+
+	.column-item-logo {
+		width: 30px;
+		height: 30px;
+		vertical-align: middle;
+		display: inline-block;
+	}
+
+	.column-item {
+		margin-bottom: 17px;
+	}
+
+	.column-item a{
+		text-decoration: none;
+		color: #657176;
+	}</style><footer class="caelum-footer"><div class="grupoCaelum"><div class="container"><p class="grupoCaelum-title">Grupo Alura</p><ul class="grupoCaelum-list"><li class="grupoCaelum-column"><p class="grupoCaelum-column-title">Educação</p><ul class="grupoCaelum-column-list"><li class="column-item">
+<a target="_blank" href="https://www.caelum.com.br/">
+<svg class="column-item-logo">
+<use xlink:href="/svg,1647533642/caelumFooter#icon-caelumFooter-novo-logo-caelum">
+</use></svg><span class="column-item-title">Caelum</span>
+
+</a></li><li class="column-item">
+<a target="_blank" href="https://www.casadocodigo.com.br/">
+<svg class="column-item-logo"><use xlink:href="/svg,1647533642/caelumFooter#icon-caelumFooter-cdc"></use></svg><span class="column-item-title">Casa do Código</span>
+</a></li></ul></li><li class="grupoCaelum-column"><p class="grupoCaelum-column-title">Educação Online</p><ul class="grupoCaelum-column-list"><li class="column-item">
+<a target="_blank" href="https://www.alura.com.br/">
+<svg class="column-item-logo"><use xlink:href="/svg,1647533642/caelumFooter#icon-caelumFooter-alura"></use></svg><span class="column-item-title">Alura</span>
+</a></li><li class="column-item">
+<a target="_blank" href="https://www.alura.com.br/empresas">
+<svg class="column-item-logo" style="fill: white;"><use xlink:href="/svg,1647533642/caelumFooter#icon-caelumFooter-alura"></use></svg><span class="column-item-title">Alura Para Empresas</span>
+</a></li><li class="column-item">
+<a target="_blank" href="https://www.aluracursos.com/">
+<svg class="column-item-logo"><use xlink:href="/svg,1647533642/caelumFooter#icon-caelumFooter-alura"></use></svg><span class="column-item-title">Alura LATAM</span>
+</a></li><li class="column-item">
+<a target="_blank" href="https://www.alurastart.com.br/">
+<svg class="column-item-logo"><use xlink:href="/svg,1647533642/caelumFooter#icon-caelumFooter-alurastart"></use></svg><span class="column-item-title">Alura Start</span>
+</a></li><li class="column-item">
+<a target="_blank" href="https://www.musicdot.com.br/">
+<svg class="column-item-logo"><use xlink:href="/svg,1647533642/caelumFooter#icon-caelumFooter-musicdot"></use></svg><span class="column-item-title">MusicDot</span>
+</a></li><li class="column-item">
+<a target="_blank" href="https://www.aluralingua.com.br/">
+<svg class="column-item-logo"><use xlink:href="/svg,1647533642/caelumFooter#icon-caelumFooter-aluralingua"></use></svg><span class="column-item-title">Alura Língua</span>
+</a></li><li class="column-item">
+<a target="_blank" style="fill: #657176" href="https://www.cursospm3.com.br/">
+<svg class="column-item-logo"><use xlink:href="/svg,1647533642/caelumFooter#icon-caelumFooter-pm3"></use></svg><span class="column-item-title">PM3 - Cursos de Produto</span>
+</a></li></ul></li><li class="grupoCaelum-column"><p class="grupoCaelum-column-title">Comunidade</p><ul class="grupoCaelum-column-list"><li class="column-item">
+<a target="_blank" href="https://hipsters.tech/">
+<svg class="column-item-logo"><use xlink:href="/svg,1647533642/caelumFooter#icon-caelumFooter-hipsterstech"></use></svg><span class="column-item-title">Hipsters ponto Tech</span>
+</a></li><li class="column-item">
+<a target="_blank" href="https://scuba.dev.br/">
+<svg class="column-item-logo" style="fill: #657176"><use xlink:href="/svg,1647533642/caelumFooter#icon-caelumFooter-scubadev"></use></svg><span class="column-item-title">Scuba Dev</span>
+</a></li><li class="column-item">
+<a target="_blank" href="https://layerspontotech.com.br/">
+<svg class="column-item-logo"><use xlink:href="/svg,1647533642/caelumFooter#icon-caelumFooter-layerstech"></use></svg><span class="column-item-title">Layers ponto Tech</span>
+</a></li><li class="column-item">
+<a target="_blank" href="https://likeaboss.com.br/">
+<svg class="column-item-logo" style="fill: #657176"><use xlink:href="/svg,1647533642/caelumFooter#icon-caelumFooter-likeaboss"></use></svg><span class="column-item-title">Like a Boss</span>
+</a></li><li class="column-item">
+<a target="_blank" href="https://www.carreirasemfronteiras.com.br/">
+<svg class="column-item-logo" style="fill: #657176"><use xlink:href="/svg,1647533642/caelumFooter#icon-caelumFooter-carreira-sem-fronteiras"></use></svg><span class="column-item-title">Carreira sem Fronteiras</span>
+</a></li><li class="column-item">
+<a target="_blank" href="https://hipsters.jobs/">
+<svg class="column-item-logo"><use xlink:href="/svg,1647533642/caelumFooter#icon-caelumFooter-hipstersjobs"></use></svg><span class="column-item-title">Hipsters ponto Jobs</span>
+</a></li><li class="column-item">
+<a target="_blank" href="https://www.guj.com.br/">
+<svg class="column-item-logo"><use xlink:href="/svg,1647533642/caelumFooter#icon-caelumFooter-guj"></use></svg><span class="column-item-title">GUJ</span>
+</a></li></ul></li></ul></div></div></footer> <script>(function(){
+    var match = location.pathname.match(/\/(bf-|black-?friday\/)([^\/]+)/);
+    if (match != null) {
+        var links = document.querySelectorAll('a[href]');
+        for (var i = 0; i < links.length; i++) {
+            var href = links[i].getAttribute('href');
+            if (href[0] === '/') {
+                links[i].setAttribute('href', '/bf-' + match[2] + href);
+            }
+        }
+    }
+})();</script> <script src="./O que é o HTML e suas tags_ Parte 1_ estrutura básica _ Alura_files/jquery.min.js"></script> <script src="./O que é o HTML e suas tags_ Parte 1_ estrutura básica _ Alura_files/svg4everybody.min.1647533644.js" async=""></script> <script src="./O que é o HTML e suas tags_ Parte 1_ estrutura básica _ Alura_files/menu.1647533644.js" async=""></script> <script src="./O que é o HTML e suas tags_ Parte 1_ estrutura básica _ Alura_files/busca.1647533644.js" async=""></script> <script src="./O que é o HTML e suas tags_ Parte 1_ estrutura básica _ Alura_files/cursos.1647533644.js" async=""></script> <script src="./O que é o HTML e suas tags_ Parte 1_ estrutura básica _ Alura_files/detect.1647533644.js" async=""></script> <script src="./O que é o HTML e suas tags_ Parte 1_ estrutura básica _ Alura_files/video.1647533644.js" async=""></script> <script src="./O que é o HTML e suas tags_ Parte 1_ estrutura básica _ Alura_files/Countdown.1647533644.js" async=""></script> <script>var userId = (document.cookie.match('alura.userId=([^;]+)')||[null,null])[1];
+  window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+
+  	ga('create', 'UA-42101548-1', 'alura.com.br', 'tracker0', {'siteSpeedSampleRate': 50});
+
+	if (userId) ga('tracker0.set', 'userId', userId);
+
+	ga('tracker0.require', 'displayfeatures');
+	ga('tracker0.send', 'pageview');
+  	ga('create', 'UA-42101548-9', 'alura.com.br', 'tracker1', {'siteSpeedSampleRate': 50});
+
+	if (userId) ga('tracker1.set', 'userId', userId);
+
+	ga('tracker1.require', 'displayfeatures');
+	ga('tracker1.send', 'pageview');</script> <script async="" src="./O que é o HTML e suas tags_ Parte 1_ estrutura básica _ Alura_files/analytics.js"></script> <script src="./O que é o HTML e suas tags_ Parte 1_ estrutura básica _ Alura_files/footer.1647533644.js" async=""></script> <script src="./O que é o HTML e suas tags_ Parte 1_ estrutura básica _ Alura_files/highlight.min.js"></script> <script>hljs.initHighlightingOnLoad();</script> <script>(function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:2983364,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');</script> <script type="text/javascript">_linkedin_partner_id = "465017";
+			window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+			window._linkedin_data_partner_ids.push(_linkedin_partner_id);</script> <script type="text/javascript">(function(){var s = document.getElementsByTagName("script")[0];
+			var b = document.createElement("script");
+			b.type = "text/javascript";b.async = true;
+			b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+			s.parentNode.insertBefore(b, s);})();</script> <noscript>
+<img
+height="1" width="1" style="display:none;" alt=""
+src="https://dc.ads.linkedin.com/collect/?pid=465017&fmt=gif" />
+</noscript><script type="text/javascript" id="">elements=document.querySelectorAll("input, select");elements.forEach(function(b,c){b.addEventListener("change",function(a){a=this.getAttribute("name");dataLayer.push({event:"gaEvent",eventCategory:"Formul\u00e1rios",eventAction:"Altera\u00e7\u00e3o",eventLabel:a})})});</script>
+<script type="text/javascript" id="">var key="Think_Again45984$%";function log(a){console.log(a)}function getPars(){var a={};window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi,function(b,c,d){a[c]=d});return a}function userId(a){a=sha256.hmac(key,a);dataLayer.push({event:"userId",userId:a})}var script=document.createElement("script");script.onload=function(){var a=getPars().e;a&&userId(a);a=document.querySelectorAll('[type\x3d"email"]');for(var b=0;b<a.length;b++)a[b].onchange=function(){userId(this.value)}};script.src="https://cdnjs.cloudflare.com/ajax/libs/js-sha256/0.9.0/sha256.min.js";
+document.head.appendChild(script);</script><iframe id="_hjSafeContext_47181585" src="./O que é o HTML e suas tags_ Parte 1_ estrutura básica _ Alura_files/saved_resource.html" style="display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;"></iframe><iframe name="_hjRemoteVarsFrame" title="_hjRemoteVarsFrame" id="_hjRemoteVarsFrame" src="./O que é o HTML e suas tags_ Parte 1_ estrutura básica _ Alura_files/box-0004cb77850b00d4aa7e1e08ff61e8f0.html" style="display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;"></iframe></body></html>

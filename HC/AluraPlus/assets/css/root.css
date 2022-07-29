@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'icones';
+    src: url(../font/icones.ttf);
+}
+
+/*
+A pseudo-classe CSS  :root se equipara à raiz de uma árvore, que por sua vez representa o documento. Aplicado ao HTML, :rootrepresenta o elemento <html>  e é idêntico ao HTML, exceto que sua especificidade é mais alta.
+*/
+:root {
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #c0c0c0;
+    --botao-azul: #167BF7;
+    --cor-de-fundo: #00030C;
+}
